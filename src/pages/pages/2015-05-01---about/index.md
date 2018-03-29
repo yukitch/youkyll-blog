@@ -1,13 +1,19 @@
 ---
-title: "About me"
+title: "ゆきちについて"
 layout: page
 path: "/about"
 ---
 
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+ITベンチャー数社へのパートナーとして、
+主にサービス立ち上げ時の開発に携わる。
 
-![Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.](./1.jpg)
+現在は株式会社エンファクトリーにて、
+「Teamlancer」のフルスタックとして一人でこなしながら、
+グロースハッカーとして活躍中。
 
-*Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.*
+同時にサイドワークとして、民泊オーナー、仮想通貨ツール開発、音楽サービスの開発など、
+ゼロイチにやりがいを感じ、様々なことに挑戦中。
 
-Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+
+
+最近の関心はReact, GraphQLを利用したJamstackでの高速MVPプロダクト開発。
