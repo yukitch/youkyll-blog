@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    url: 'https://lumen.netlify.com',
+    url: 'https://youkyll.com',
     title: '寝過ごした日々に - youkyll',
     subtitle: '',
     copyright: 'youkyll All rights reserved.',
-    disqusShortname: '',
+    disqusShortname: 'youkyll',
     menu: [
       {
         label: 'Articles',
@@ -25,7 +25,7 @@ module.exports = {
       avatar: 'https://s.gravatar.com/avatar/39cfc9726ee7866d021a5c94bc50f4ac?s=80&r=g',
       telegram: '#',
       twitter: '@youkyll',
-      github: 'https://github.com/youkyll',
+      github: 'youkyll',
       rss: '#',
       vk: '#'
     }
