@@ -2,8 +2,22 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Post from '../components/Post';
 import Sidebar from '../components/Sidebar';
+import Script from 'react-load-script'
 
 class IndexRoute extends React.Component {
+  handleScriptLoad() {
+    if (typeof window !== `undefined` && window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+    window.netlifyIdentity.init();
+  }
+
   render() {
     const items = [];
     const { title, subtitle } = this.props.data.site.siteMetadata;
@@ -17,6 +31,10 @@ class IndexRoute extends React.Component {
         <Helmet>
           <title>{title}</title>
           <meta name="description" content={subtitle} />
+        <Script
+          url="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          onLoad={() => this.handleScriptLoad()}
+        />
         </Helmet>
         <Sidebar {...this.props} />
         <div className="content">
@@ -45,6 +63,7 @@ export const pageQuery = graphql`
         author {
           name
           email
+          avatar
           telegram
           twitter
           github

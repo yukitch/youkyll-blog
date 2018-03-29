@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     url: 'https://lumen.netlify.com',
-    title: 'Blog by John Doe',
-    subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
-    copyright: '© All rights reserved.',
+    title: '寝過ごした日々に - youkyll',
+    subtitle: '',
+    copyright: 'youkyll All rights reserved.',
     disqusShortname: '',
     menu: [
       {
@@ -20,11 +20,12 @@ module.exports = {
       }
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'ゆうき',
+      email: 'yuuki08180102@gmail.com',
+      avatar: 'https://s.gravatar.com/avatar/39cfc9726ee7866d021a5c94bc50f4ac?s=80&r=g',
       telegram: '#',
-      twitter: '#',
-      github: '#',
+      twitter: '@youkyll',
+      github: 'https://github.com/youkyll',
       rss: '#',
       vk: '#'
     }
@@ -157,6 +158,12 @@ module.exports = {
             };
           })
       }
+    },
+   {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
