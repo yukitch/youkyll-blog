@@ -5,6 +5,13 @@ import Sidebar from '../components/Sidebar';
 import Script from 'react-load-script'
 
 class IndexRoute extends React.Component {
+  handleAddsenseLoad() {
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7899961255527357",
+          enable_page_level_ads: true
+     });
+  }
+
   handleScriptLoad() {
     if (typeof window !== `undefined` && window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
@@ -34,6 +41,10 @@ class IndexRoute extends React.Component {
         <Script
           url="https://identity.netlify.com/v1/netlify-identity-widget.js"
           onLoad={() => this.handleScriptLoad()}
+        />
+        <Script
+          onLoad={() => this.handleAddsenseLoad()}
+          url="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
         />
         </Helmet>
         <Sidebar {...this.props} />
