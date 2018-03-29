@@ -7,6 +7,7 @@ path: "/posts/start-blog-with-gatby"
 category: "Programming"
 tags:
  - "Javascript"
+description: "Gatsbyでのブログの始め方" 
 ---
 
 今まであらゆるブログを試してきましたが、
