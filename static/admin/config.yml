@@ -4,6 +4,12 @@ backend:
   repo: youkyll/youkyll-blog
   branch: master
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: davkbtsa4
+    api_key: 153758269172829
+
 media_folder: static/img
 public_folder: /img
 
@@ -22,8 +28,3 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-media_library:
-  name: cloudinary
-  config:
-    cloud_name: davkbtsa4
-    api_key: 153758269172829
