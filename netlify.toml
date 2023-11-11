@@ -4,3 +4,6 @@
 [build.environment]
   YARN_VERSION = "1.3.2"
   YARN_FLAGS = "--no-ignore-optional"
+[[redirects]]
+  from = "/*"
+  to = "https://youkyll.notion.site/4dc4494aa91a4a798dda14b3ade46b05"
